@@ -40,6 +40,8 @@ function Busqueda_Contrato() {
                 || elemento.f_final.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setContrato(resultadosBusqueda);
