@@ -36,6 +36,8 @@ function Busqueda_Proveedor() {
                 || elemento.ruc.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setProveedor(resultadosBusqueda);
