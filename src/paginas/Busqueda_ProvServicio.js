@@ -37,6 +37,8 @@ function Busqueda_ProvServicio() {
                 || elemento.id_servicio.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setProvServicio(resultadosBusqueda);
