@@ -38,6 +38,8 @@ function Busqueda_ActivoEmpleado() {
                 || elemento.f_fin.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setActivoEmpleado(resultadosBusqueda);
