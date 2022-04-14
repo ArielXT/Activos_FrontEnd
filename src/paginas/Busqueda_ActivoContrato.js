@@ -36,6 +36,8 @@ function Busqueda_ActivoContrato() {
                 || elemento.id_contrato.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setActivoContrato(resultadosBusqueda);
