@@ -36,6 +36,8 @@ function Busqueda_Servicio() {
                 || elemento.nombre_larg.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setServicio(resultadosBusqueda);
