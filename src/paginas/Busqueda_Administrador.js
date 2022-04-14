@@ -38,6 +38,8 @@ function Busqueda_Administrador() {
                 || elemento.id_admin.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())//borrar?                
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setAdministrador(resultadosBusqueda);
