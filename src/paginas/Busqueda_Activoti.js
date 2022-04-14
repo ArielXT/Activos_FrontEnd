@@ -52,7 +52,9 @@ function Busqueda_Activoti() {
                 || elemento.marca.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
-            }
+            } else {
+                return false;
+            }                
         });
         setActivoti(resultadosBusqueda);
     }
