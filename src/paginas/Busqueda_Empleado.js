@@ -41,6 +41,8 @@ function Busqueda_Empleado() {
                 || elemento.id_ceco.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setEmpleado(resultadosBusqueda);
