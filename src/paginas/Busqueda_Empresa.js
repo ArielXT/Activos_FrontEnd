@@ -36,6 +36,8 @@ function Busqueda_Empresa() {
                 || elemento.ruc.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setEmpresa(resultadosBusqueda);
