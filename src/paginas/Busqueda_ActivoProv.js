@@ -36,6 +36,8 @@ function Busqueda_ActivoProv() {
                 || elemento.id_provservicio.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setActivoProv(resultadosBusqueda);
