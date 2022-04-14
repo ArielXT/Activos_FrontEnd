@@ -37,6 +37,8 @@ function Busqueda_NivelAcceso() {
                 || elemento.estado.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
             ) {
                 return elemento;
+            } else {
+                return false;
             }
         });
         setNivelAcceso(resultadosBusqueda);
