@@ -170,7 +170,7 @@ class nivel_acceso extends Component {
                                     <select className="form-control" type="text" name="id_admin" id="id_admin" onChange={this.handleChange} value={form ? form.id_admin : ''}>
                                         <option value="-- Elija un ID --"> -- Elija un ID -- </option>
                                         {this.state.administrador.map(administrador => (
-                                            <option key={administrador.id_admin} value={administrador.id_admin}>{administrador.dni}</option>
+                                            <option key={administrador.id_admin} value={administrador.id_admin}>{administrador.dni} - {administrador.iniciales}</option>
                                         ))
                                         }
                                     </select>
